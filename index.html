@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/material-icons@1.13.8/iconfont/material-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Jost:ital,wght@0,500;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .py-4 {
+        padding: 4vh 0 !important;
+    }
+
+    .brand-logo {
+        margin-right: 0.30vw;
+        color: white;
+    }
+
+    .solid {
+        border-right: 1px solid white;
+        height: fit-content;
+
+    }
+
+    .nav-wrapper {
+        background-color: rgb(239, 39, 97);
+        display: flex;
+        justify-content: space-between;
+        gap: 1vw;
+        height: 5vh;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.85vw;
+        margin-left: 3vw;
+    }
+
+    ul,
+    li {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2vw;
+    }
+
+    .cont {
+        margin-right: 1vw;
+        padding: 0%;
+    }
+
+    .conts {
+        margin-right: 1vw;
+        padding: 0%;
+    }
+
+    a {
+        color: black;
+    }
+
+    .countries {
+        display: flex;
+        justify-content: space-between;
+        gap: 1vw;
+        margin-right: 3vw;
+    }
+
+
+    .arrow {
+        margin-left: 0.45vw;
+        font-size: small;
+        color: #d9d5d5;
+
+    }
+
+    .dropdown-trigger:hover {
+        color: rgb(8, 3, 50);
+    }
+
+    .arrow:hover {
+        color: rgb(8, 3, 50);
+    }
+
+
+    /* nav menu one styling */
+
+    .nav-section {
+        display: flex;
+        justify-content: space-between;
+        height: 11vh;
+        /* background-color: antiquewhite; */
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        gap: 1vw;
+        align-items: center;
+        margin-left: 3vw;
+    }
+
+    .cart {
+        color: rgb(239, 39, 97);
+        font-size: xx-large;
+    }
+
+    .logo-name {
+        font-size: xx-large;
+        font-weight: 500;
+        margin: 0%;
+        color: #424242;
+    }
+
+    .categories {
+        display: flex;
+        box-sizing: border-box;
+        border-color: #817b7b;
+        align-items: center;
+    }
+
+    .all-categories {
+        align-items: center;
+        /* padding: 2vw; */
+        border: 1px solid rgba(186, 184, 184, 0.535);
+        height: 4vw;
+        width: 15vw;
+        color: rgba(74, 66, 66, 0.535);
+
+    }
+
+    .cta-icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 2vw;
+        align-items: center;
+        margin-right: 3vw;
+    }
+
+    .account {
+        display: block;
+
+    }
+
+
+    .icon-text {
+        font-size: 400;
+        margin: 0%;
+        color: #625f5f;
+        font-weight: 300;
+    }
+
+    .icons {
+        margin-left: 2vw;
+        font-size: larger;
+        font-weight: 100;
+        color: #625f5f;
+    }
+
+    .icon-s {
+        margin-left: 1vw;
+        font-size: larger;
+        font-weight: 100;
+        color: #625f5f;
+    }
+
+    .iconss {
+        margin-left: 1vw;
+        font-size: larger;
+        color: #625f5f;
+    }
+
+    .span {
+        border-radius: 100%;
+        background-color: rgb(239, 39, 97);
+        color: white;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        font-size: 65%;
+        bottom: 78%;
+        left: 48%;
+
+    }
+
+    .keyword {
+        align-items: center;
+        /* padding: 2vw; */
+        border: 1px solid rgba(186, 184, 184, 0.535);
+        border-left: 1px solid rgba(0, 0, 0, 0.0);
+        height: 4vw;
+        width: 15vw;
+    }
+
+    .keywords {
+        position: absolute;
+        left: 46vw;
+        top: 9.5vh;
+        font-weight: 600;
+        font-size: small;
+        color: rgba(74, 66, 66, 0.535);
+    }
+
+
+    .search {
+        background-color: rgb(239, 39, 97);
+        width: 3vw;
+        height: 7.2vh;
+    }
+
+    .search-icon {
+        font-size: large;
+        position: absolute;
+        top: 9.5vh;
+        left: 61vw;
+        color: white;
+
+    }
+
+    .arrows {
+        color: black;
+    }
+
+
+    .dropdown-triggers {
+        color: black;
+    }
+
+
+    /* nav-section two styling*/
+
+
+    .nav-section-two {
+        border-top: 0.2vh solid rgba(236, 234, 234, 0.535);
+        font-weight: 300;
+    }
+
+    .s-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 1vw;
+        margin-left: 1.5vw;
+
+    }
+
+    .nav-s {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0.85vw;
+        margin-top: 0.55vh;
+        color: rgb(168, 168, 168);
+        font-size: 200;
+
+
+    }
+
+    .bulb {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2vw;
+        align-items: center;
+        gap: 1.85vw;
+    }
+
+
+    .light {
+        font-size: x-large;
+        color: rgb(239, 39, 97);
+    }
+
+    .light-text {
+        font-size: medium;
+        color: #817b7b;
+        font-weight: 400;
+    }
+
+
+
+    /* Hero section styling */
+
+    .bg-icon {
+        display: flex;
+        justify-content: space-between;
+        gap: 90vw;
+        position: absolute;
+        top: 50vh;
+        margin-left: 2vw;
+    }
+
+    .arrow-bg {
+        background-color: rgb(239, 39, 97);
+        height: 5vh;
+        width: 3vw;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+
+    .bg-text {
+        position: absolute;
+        top: 35vh;
+        left: 8vw;
+    }
+
+    h3 {
+        font-weight: 600;
+
+    }
+
+
+    /* Featured Section Styling */
+
+    .bg-cards {
+        /* display: flex; */
+        position: relative;
+    }
+
+    .featured {
+        margin: 8vh 4vw;
+
+    }
+
+    .bag-img {
+        height: 35vh !important;
+    }
+
+    .img-bag_holder {
+        margin-top: 2vh;
+    }
+
+    .man-img {
+        height: 73.3vh !important;
+        position: relative;
+    }
+
+    .text-box {
+        position: absolute;
+        left: 4%;
+        top: 3%;
+        z-index: 1;
+    }
+
+    .text-description {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        color: #817b7b;
+
+    }
+
+    .description_text {
+        color: #000000;
+        font-size: xx-large;
+
+    }
+
+    .arr-text {
+        color: rgb(239, 39, 97);
+    }
+
+    .description_texts-s {
+        font-size: 130%;
+    }
+
+    .description_text-s {
+        font-size: 130%;
+    }
+
+
+    /* Product Section Styling */
+
+    .new-product-list {
+        display: flex;
+        align-items: center;
+        padding: 0%;
+        margin-top: 2%;
+        gap: 5%;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .prod-div {
+        margin-left: 42%;
+        margin-bottom: 3%;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .div {
+        align-items: center;
+        margin-left: 10%;
+    }
+
+    .new-product {
+        margin: 0%;
+        font-weight: 800;
+    }
+
+    .type-cloth {
+        color: #a9a7a7;
+        font-weight: lighter;
+        margin: 0%;
+    }
+
+    .cloth_descriptions {
+        font-weight: 800;
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+
+    .product-shop {
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+    .cloth_price {
+        margin-top: 2%;
+    }
+
+    .rate {
+        margin-bottom: 4%;
+        margin-top: 1%;
+    }
+
+
+    .btn {
+        border: 1px solid #d7d5d5;
+        background-color: white;
+        color: #868585;
+        font-size: small;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
+        font-weight: 50%;
+        text-transform: none;
+    }
+
+    .btn:hover {
+        border: 1px solid #d7d5d5;
+        background-color: rgb(239, 39, 97);
+        color: white;
+        font-size: small;
+        box-shadow: none;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
+        font-weight: 50%;
+        text-transform: none;
+    }
+
+
+
+
+    .btn i {
+        font-size: small;
+
+    }
+
+    .cart-add {
+        font-size: small;
+        color: aqua;
+    }
+
+
+    /* deal section Styling */
+
+    .banner {
+        margin-top: 7%;
+        margin-left: 3%;
+        margin-bottom: 5%;
+        position: relative;
+
+    }
+
+    .deal-text {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+
+
+    .row-row {
+        margin-top: 10%;
+        margin-right: 1.5%;
+        margin-bottom: 5%;
+        margin-left: 3%;
+    }
+
+    .deal-discount {
+        color: rgb(239, 39, 97);
+    }
+
+    .countdown-colon {
+        display: flex;
+        justify-content: space-between;
+        gap: 7%;
+        position: absolute;
+        top: 50%;
+        left: 4%;
+    }
+
+    .colon {
+        font-size: 500%;
+    }
+    
+
+    .countdown {
+        background-color: #f0f1f8;
+        padding: 12%;
+        height: 13vh;
+        border-radius: 5%;
+    }
+
+    .count-num {
+        font-size: 200%;
+        margin: 0%;
+    }
+
+    .count-text {
+        font-size: 120%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        color: #606060;
+    }
+
+    .btn-countdown {
+        background-color: rgb(239, 39, 97);
+        color: #ffffff;
+        position: absolute;
+        top: 82%;
+        left: 4%;
+    }
+
+
+    /* clients section styling */
+
+    .client-cards {
+        width: 53vh !important;
+        background-color: #ffffff;
+        box-shadow: 2px 0 20px rgba(0, 0, 0, .06);
+        align-items: center;
+        justify-content: space-between;
+        gap: 1vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 0%;
+        width: 25%;
+        margin-left: 3% !important;
+
+    }
+
+    .client-name {
+        font-weight: 800%;
+        font-size: 150%;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
+        margin: 0%;
+        
+    }
+
+    .client-brand {
+        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
+        color: #a9a7a7;
+        font-size: 120%;
+        margin: 0%;
+    }
+
+    .client-description {
+        text-align: center;
+        margin: 0%;
+        color: #807d7d;
+        font-weight: lighter;
+    }
+
+    /* ads section styling */
+
+    .ads {
+        position: relative;
+        margin-top: 10%;
+        margin-left: 3%;
+    }
+
+    .ad-text {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+
+    .ad-description {
+        color: white;
+        font-size: xX-large;
+    }
+
+    .ads-description {
+        color: white;
+        font-weight: 100;
+    }
+
+
+    .btn-ads {
+        background-color: rgb(239, 39, 97);
+        color: white;
+        font-weight: 500;
+        border: 1px solid rgb(239, 39, 97);
+        width: 9vw;
+        margin-top: 10%;
+    }
+
+    .btn-ads:hover {
+        background-color: white;
+        color: rgb(239, 39, 97);
+        font-weight: 500;
+        border: 1px solid rgb(239, 39, 97);
+        width: 9vw;
+        margin-top: 10%;
+    }
+
+
+
+    .client-pic {
+        position: absolute;
+        left: 10%;
+    }
+
+
+    /* blogs Section styling */
+
+    .blogs {
+        margin-top: 7%;
+        margin-right: 2.5%;
+        margin-left: 3%;
+    }
+
+    .blog-description {
+        color: #868585;
+    }
+
+
+    .btn-blog {
+        margin-top: 2%;
+    }
+
+    .btn-blog:hover {
+        background-color: rgb(239, 39, 97);
+        color: #ffffff;
+    }
+
+    /* footer Section Styling */
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+        margin-right: 3%;
+        margin-left: 0%;
+        background-color: #000000;
+        width: 100%;
+        align-items: center;
+        color: white;
+        padding: 3%;
+        margin-top: 7%;
+    }
+
+    .footer-socials {
+        color: #ffffff;
+    }
+
+    /* .about {
+        margin-left: 3%;
+        margin-top: 3%;
+    } */
+
+    .account-categories {
+        display: flex;
+
+    }
+
+    .footer-links li {
+        display: block;
+        color: #ffffff;
+    }
+
+    .footer-image {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .footer-image-one {
+        display: flex;
+        justify-content: space-between;
+        gap: 4%;
+
+    }
+
+    .footer-image-two {
+        display: flex;
+        justify-content: space-between;
+        gap: 4%;
+        margin-top: 4%;
+
+    }
+
+    .footer-link > a {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        gap: 1vw;
+    }
+
+    .second-footer {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .copyright-image {
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copyright-footer {
+        height: fit-content;
+        margin-top: 1%;
+        margin-right: 3%;
+    }
+
+    .copy-right {
+        margin-left: 3%;
+    }
+
+
+
+
+
+    /* .man {
+        margin-left: 2vw;
+    } */
+
+    /* .s6 {
+        display: flex;
+        justify-content: space-between;
+        gap: 2vw;
+    } */
+</style>
+
+<body>
+
+    <!-- <div class="container"> -->
+
+
+    <div class="nav-wrapper">
+
+        <div class="menu">
+            <div class="solid">
+                <a href="" class="brand-logo">Welcome to Netmark Online Store</a>
+            </div>
+
+
+            <div class="solid">
+                <div class="cont">
+                    <a href="" class="brand-logo"><i class="fa-solid fa-truck icon"></i></a>
+                    <a href="#" class="brand-logo">Track Your Order</a>
+                </div>
+
+            </div>
+
+
+            <div class="cont">
+                <a href="#" class="brand-logo"><i class="fa-regular fa-envelope icon"></i></a>
+                <a href="#" class="brand-logo">demo@gmail.com</a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="countries">
+
+            <div class="solid">
+                <div class="conts">
+
+                    <img src="images/english.png" alt="images">
+                    <a class="dropdown-trigger brand-logo" href="#">English<i
+                            class="fa-solid fa-chevron-down arrow"></i></a>
+                </div>
+
+            </div>
+
+
+            <div class="conts">
+                <img src="images/british.png" alt="images">
+                <a class="dropdown-trigger brand-logo" href="#">$ US Dollars<i
+                        class="fa-solid fa-chevron-down arrow"></i></a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- NavBar Sectio -->
+
+
+
+    <div class="nav-section">
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+            <H6 class="logo-name">
+                Suruchi
+            </H6>
+        </div>
+
+        <div class="categories">
+            <select class="all-categories browser-default">
+                <option class="cat-text">All categories</option>
+                <option>Shirts</option>
+                <!-- <a class="dropdown-trigger" href="#">All categories<i class="fa-solid fa-chevron-down arrow"></i></a> -->
+            </select>
+
+            <div>
+                <input type="text" class="keyword browser-default">
+                <label for="keyword" class="keywords">keyword here...</label>
+            </div>
+
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+        </div>
+
+        <div class="cta-icons">
+            <div class="account">
+                <i class="fa-regular fa-user icons"></i>
+                <p class="icon-text">My Account</p>
+            </div>
+
+            <div class="wishlist relative">
+
+                <i class="fa-regular fa-heart icon-s"></i>
+                <span class="span">02</span>
+
+                <p class="icon-text">Wish List</p>
+            </div>
+
+            <div class="carts relative">
+                <i class="fa-solid fa-cart-shopping iconss"></i>
+                <span class="span">02</span>
+                <p class="icon-text">My Cart</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Nav Section 2 -->
+
+
+
+    <div class="nav-section-two">
+
+        <ul class="left hide-on-med-and-down s-nav">
+            <li><a class="dropdown-triggers nav-s" href="#" data-target="navCategory">Home</a></li>
+            <li><a class="dropdown-triggers nav-s" href="#" data-target="navCategory">Shop</a></li>
+            <!-- d -->
+            <li><a class="dropdown-triggers nav-s" href="#" data-target="navCategory">Blog<i
+                        class="fa-solid fa-chevron-down arrows nav-s"></i></a></li>
+            <li><a class="dropdown-triggers nav-s" href="#" data-target="navCategory">Categories</a></li>
+            <li><a class="dropdown-triggers nav-s" href="#" data-target="navCategory">Pages<i
+                        class="fa-solid fa-chevron-down arrows nav-s"></i></a></li>
+            <li><a class="dropdown-triggers nav-s" href="#" data-target="navCategory">Pages<i
+                        class="fa-solid fa-chevron-down arrows nav-s"></i></a></li>
+            <li><a class="dropdown-triggers nav-s" href="#" data-target="navCategory">Contact</a></li>
+        </ul>
+
+
+        <div class="bulb">
+            <i class="fa-regular fa-lightbulb light"></i>
+            <p class="light-text">Special up to 60% Off all item</p>
+        </div>
+
+    </div>
+
+
+    <!-- Hero Section -->
+
+
+
+    <div class="hero">
+        <img src="images/bg.png" alt="bg" class="responsive-img">
+        <div class="bg-icon">
+            <i class="fa-solid fa-chevron-left arrow-bg"></i>
+            <i class="fa-solid fa-chevron-right arrow-bg"></i>
+        </div>
+
+        <div class="bg-text">
+            <p> New Collection </p>
+            <H3> The Great Fashion <br> Collection 2022 </H3>
+            <p>Up to 40% Off Final Sales Items. <br> Caught in the Moment </p>
+        </div>
+
+
+        <!-- Featured section -->
+
+        <div class="featured">
+            <div class="row">
+                <div class="col s6">
+                    <div class="bg-cards">
+                        <div class="text-box">
+                            <p class="text-discount">17% Discount</p>
+                            <h5 class="description_text">Spring Collection <br> Style To</h6>
+                                <div class="text-description">
+                                    <p>View Discounts</p> <i class="fa-solid fa-arrow-right arr-text"></i>
+                                </div>
+                        </div>
+                        <img src="images/man.png" alt="man" class="responsive-img w-100 man-img">
+                    </div>
+                </div>
+
+
+
+                <div class="col s6">
+                    <div class="row women">
+                        <div class="col s6">
+                            <div class="bg-cards">
+                                <div class="text-box">
+                                    <p class="text-discount">Shop Women</p>
+                                    <h5 class="description_texts-s">Up to 70% off & <br> Free Shipping</h6>
+                                        <div class="text-description">
+                                            <p>View Discounts</p> <i class="fa-solid fa-arrow-right arr-text"></i>
+                                        </div>
+                                </div>
+                                <img src="images/girl.png" alt="girl" class="girl responsive-img">
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="bg-cards">
+                                <div class="text-box">
+                                    <p class="text-discount">Shop Women</p>
+                                    <h5 class="description_text-s">Free Shipping Over <br> Order $120</h6>
+                                        <div class="text-description">
+                                            <p>View Discounts</p> <i class="fa-solid fa-arrow-right arr-text"></i>
+                                        </div>
+                                </div>
+                                <img src="images/lady.png" alt="lady" class="lady responsive-img">
+                            </div>
+                        </div>
+                        <div class="col s12 img-bag_holder">
+                            <div class="bg-cards">
+                                <div class="text-box">
+                                    <p class="text-discount">25% Discount</p>
+                                    <h5 class="description_texts">Leather Saddle <br> Bag Style</h6>
+                                        <div class="text-description">
+                                            <p>View Discounts</p> <i class="fa-solid fa-arrow-right arr-text"></i>
+                                        </div>
+                                </div>
+                            </div>
+                            <img src="images/bag.png" alt="bag" class="responsive-img w-100 bag-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- New Product Section -->
+
+
+
+    <div class="new-prod">
+
+
+
+        <div class="prod-div">
+            <h4 class="new-product">New Product</h4>
+            <img src="images/divider.png" alt="divider div">
+
+            <div class="new-product-list">
+
+                <div class="product-list">
+                    <a href="#" class="feat-list">Featured</a>
+                </div>
+
+                <div class="product-list">
+                    <a href="#" class="feat-list">Trending</a>
+                </div>
+
+                <div class="product-list">
+                    <a href="#" class="feat-list">New Arrival</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="product-shop">
+
+            <div class="row">
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/black.png" alt="black">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">Oversize Cutton Dress</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/red.png" alt="red">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">Boxy Denim Jacket</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/white.png" alt="white">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">Quilted Shoulder Bag</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+
+
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/wine.png" alt="wine">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">High Ankle Jeans</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="product-shop">
+
+            <div class="row">
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/black.png" alt="black">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">Oversize Cutton Dress</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/red.png" alt="red">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">Boxy Denim Jacket</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/white.png" alt="white">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">Quilted Shoulder Bag</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+
+
+                <div class="col s3">
+                    <div class="cloth-img">
+                        <img src="images/wine.png" alt="wine">
+                        <p class="type-cloth">Jacket, Women</p>
+                        <p class="cloth_descriptions">High Ankle Jeans</p>
+                        <p class="cloth_price">$110-$78</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                            <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        </div>
+                        <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                        <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                        <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                        <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- deals of the day -->
+
+
+    <div class="deals">
+
+        <div class="banner">
+            <img src="images/banner.png" alt="banner">
+
+            <div class="deal-text">
+
+                <span class="deal-discount">
+                    Hurry up and Get 25% Discount
+                </span>
+
+                <h3>
+                    Deals Of The Day
+                </h3>
+
+                <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
+                    sed do eiusmod tempor incididunt ut labore
+                </h6>
+            </div>
+
+
+            <div class="countdown-colon">
+
+                <div class="countdown">
+                    <span class="count-num">-365</span>
+                    <p class="count-text">Days</p>
+                </div>
+
+                <span class="colon">
+                    :
+                </span>
+
+                <div class="countdown">
+                    <span class="count-num">-14</span>
+                    <p class="count-text">Hours</p>
+                </div>
+
+                <span class="colon">
+                    :
+                </span>
+
+                <div class="countdown">
+                    <span class="count-num">-6</span>
+                    <p class="count-text">Mins</p>
+                </div>
+
+                <span class="colon">
+                    :
+                </span>
+
+                <div class="countdown">
+                    <span class="count-num">-51</span>
+                    <p class="count-text">Secs</p>
+                </div>
+
+            </div>
+
+            <div class="btn btn-countdown">Show Collection <i class="fa-solid fa-arrow-right"></i></div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Our Best Seller Section -->
+
+    <div class="prod-div">
+        <h4 class="new-product">Our Best Seller</h4>
+        <img src="images/divider.png" alt="divider">
+
+    </div>
+
+    <div class="product-shop">
+
+        <div class="row">
+            <div class="col s3">
+                <div class="cloth-img">
+                    <img src="images/black.png" alt="black">
+                    <p class="type-cloth">Jacket, Women</p>
+                    <p class="cloth_descriptions">Oversize Cutton Dress</p>
+                    <p class="cloth_price">$110-$78</p>
+                    <div class="rate">
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                    </div>
+                    <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                    <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                    <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                    <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                </div>
+            </div>
+
+            <div class="col s3">
+                <div class="cloth-img">
+                    <img src="images/red.png" alt="red">
+                    <p class="type-cloth">Jacket, Women</p>
+                    <p class="cloth_descriptions">Boxy Denim Jacket</p>
+                    <p class="cloth_price">$110-$78</p>
+                    <div class="rate">
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                    </div>
+                    <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                    <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                    <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                    <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                </div>
+            </div>
+
+            <div class="col s3">
+                <div class="cloth-img">
+                    <img src="images/white.png" alt="white">
+                    <p class="type-cloth">Jacket, Women</p>
+                    <p class="cloth_descriptions">Quilted Shoulder Bag</p>
+                    <p class="cloth_price">$110-$78</p>
+                    <div class="rate">
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                    </div>
+                    <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                    <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                    <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                    <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                </div>
+            </div>
+
+
+            <div class="col s3">
+                <div class="cloth-img">
+                    <img src="images/wine.png" alt="wine">
+                    <p class="type-cloth">Jacket, Women</p>
+                    <p class="cloth_descriptions">High Ankle Jeans</p>
+                    <p class="cloth_price">$110-$78</p>
+                    <div class="rate">
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                    </div>
+                    <a class="btn"><i class="fa-solid fa-cart-shopping cart-s"></i>+ Add to cart</a>
+                    <a class="btn"><i class="fa-regular fa-heart love"></i></a>
+                    <a class="btn"><i class="fa-regular fa-eye eye"></i></a>
+                    <!-- <a href="https://mrtailor.wp-theme.design/pages/classic-ecommerce/?add_to_wishlist=348&_wpnonce=302494d29e">ADD TO WISHLIST</a> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row row-row">
+        <div class="col s6">
+            <div class="bg-cards">
+                <div class="text-box">
+                    <p class="text-discount">17% Discount</p>
+                    <h5 class="description_text">Spring Collection <br> Style To</h6>
+                        <div class="text-description">
+                            <p>View Discounts</p> <i class="fa-solid fa-arrow-right arr-text"></i>
+                        </div>
+                </div>
+                <img src="images/afro.png" alt="afro">
+            </div>
+
+        </div>
+
+        <div class="col s6">
+            <div class="bg-cards">
+                <div class="text-box">
+                    <p class="text-discount">17% Discount</p>
+                    <h5 class="description_text">Spring Collection <br> Style To</h6>
+                        <div class="text-description">
+                            <p>View Discounts</p> <i class="fa-solid fa-arrow-right arr-text"></i>
+                        </div>
+                </div>
+                <img src="images/blonde.png" alt="blonde">
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Clients Testimonial -->
+
+    <div class="prod-div">
+        <h4 class="new-product">Our Clients Say</h4>
+        <img src="images/divider.png" alt="divider div">
+    </div>
+
+    <div class="row client-card">
+        <div class="col s4 client-cards py-4">
+            <img src="images/king.png" alt="king client-pic">
+            <h6 class="client-name">Nike Mardson</h6>
+            <p class="client-brand">fashion</p>
+            <p class="client-description">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Sed non nisi
+                ante. <br> Vestibulum mattis ligula a commodo semper</p>
+            <div class="ratings">
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+            </div>
+
+        </div>
+
+        <div class="col s4 client-cards py-4">
+            <img src="images/queen.png" alt="queen client-pic">
+            <h6 class="client-name">Laura Joghnson</h6>
+            <p class="client-brand">fashion</p>
+            <p class="client-description">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Sed non nisi
+                ante. <br> Vestibulum mattis ligula a commodo semper</p>
+            <div class="ratings">
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+            </div>
+
+        </div>
+
+        <div class="col s4 client-cards py-4">
+            <img src="images/prince.png" alt="prince client-pic">
+            <h6 class="client-name">Richard Smith</h6>
+            <p class="client-brand">fashion</p>
+            <p class="client-description">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Sed non nisi
+                ante. <br> Vestibulum mattis ligula a commodo semper</p>
+            <div class="ratings">
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+                <i class="fa-solid fa-star" style="color: #ffc007;"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Ads after clients section -->
+
+    <div class="ads">
+        <img src="images/bgbanner.png" alt="bgbanner">
+
+        <div class="ad-text">
+
+            <h3 class="ad-description">
+                Need Winter Boots?
+            </h3>
+
+            <h6 class="ads-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt ut
+                labore et dolore magna aliqua <br> enim ad minim veniam, quis nostrud exercitation
+            </h6>
+
+            <div class="btn btn-ads">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="blogs">
+
+        <div class="prod-div">
+            <h4 class="new-product">From The Blog</h4>
+            <img src="images/divider.png" alt="divider div">
+        </div>
+
+        <div class="row">
+            <div class="col s3">
+                <img src="images/girls.png" alt="girls">
+                <p class="blog-description">February 03, 2022</p>
+                <h6 class="blog_description">
+                    Fashiion Trends in 2021 Styles, <br> Colors, Accessories
+                </h6>
+
+                <div class="btn btn-blog">
+                    Read more
+                </div>
+            </div>
+
+            <div class="col s3">
+                <img src="images/leather.png" alt="girls">
+                <p class="blog-description">February 03, 2022</p>
+                <h6 class="blog_description">
+                    Fashiion Trends in 2021 Styles, <br> Colors, Accessories
+                </h6>
+
+                <div class="btn btn-blog">
+                    Read more
+                </div>
+            </div>
+
+            <div class="col s3">
+                <img src="images/shoot.png" alt="girls">
+                <p class="blog-description">February 03, 2022</p>
+                <h6 class="blog_description">
+                    Fashiion Trends in 2021 Styles, <br> Colors, Accessories
+                </h6>
+
+                <div class="btn btn-blog">
+                    Read more
+                </div>
+            </div>
+
+            <div class="col s3">
+                <img src="images/purse.png" alt="girls">
+                <p class="blog-description">February 03, 2022</p>
+                <h6 class="blog_description">
+                    Fashiion Trends in 2021 Styles, <br> Colors, Accessories
+                </h6>
+
+                <div class="btn btn-blog">
+                    Read more
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="about">
+            <h6 class="about-us">About Us</h6>
+            <p class="about-us-description">Lorem ipsum dolor sit amet, consectetur <br> adipisici ti elit <br>
+                seddo eiusmod tempor incididunt utlabore et <br> dolore <br>
+                magna aliqua enim ad minim veniam <br> quisnostrud <br>
+                exercitation ullamco</p>
+
+            <p class="follow">Follow Us</p>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="account-categories">
+            <div class="accounts">
+                <div class="account">
+                    <h6 class="accounts">My Account</h6>
+                </div>
+
+
+                <div class="footer-links">
+
+                    <li class="footer-link"> <a href="#">My Account</a></li>
+                    <li class="footer-link"> <a href="#">Shopping Cart</a></li>
+                    <li class="footer-link"> <a href="#">Login</a></li>
+                    <li class="footer-link"> <a href="#">Register</a></li>
+                    <li class="footer-link"> <a href="#">Checkout</a></li>
+                    <li class="footer-link"> <a href="#">Wishlist</a></li>
+
+                </div>
+
+            </div>
+
+            <div class="category-s">
+                <div class="categories">
+                    <h6 class="category">Categories</h6>
+                </div>
+
+
+                <div class="footer-links">
+                    <li class="footer-link"> <a href="#">About Us</a></li>
+                    <li class="footer-link"> <a href="#">Contact Us</a></li>
+                    <li class="footer-link"> <a href="#">Portfolio</a></li>
+                    <li class="footer-link"> <a href="#">Privacy Policy</a></li>
+                    <li class="footer-link"> <a href="#">Compare</a></li>
+                    <li class="footer-link"> <a href="#">Frequently</a></li>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="instagram">
+                <h6 class="insta">Instagram</h6>
+            </div>
+
+
+            <div class="footer-image">
+                <div class="footer-image-one">
+                    <img src="images/couch.png" alt="couch">
+                    <img src="images/chair.png" alt="couch">
+                    <img src="images/vase.png" alt="couch">
+                </div>
+
+                <div class="footer-image-two">
+                    <img src="images/lounge.png" alt="couch">
+                    <img src="images/potrait.png" alt="couch">
+                    <img src="images/bluelamp.png" alt="couch">
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="newsletter">
+                <h6 class="insta">Newsletter</h6>
+
+                <p class="newsletter-footer">
+                    Fill their seed open meat. Sea you <br>
+                    great Saw image stl
+                </p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-divider"></div>
+
+    <div class="copyright-image">
+        <p class="copy-right">Copyright © 2022 Suruchi . All Rights Reserved.Design By Suruchi</p>
+
+        <img src="images/footer.png" alt="footer-images" class="copyright-footer">
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
